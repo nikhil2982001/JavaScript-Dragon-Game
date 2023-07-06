@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.dino{
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px;
+    height: 114px;
+    position: absolute;
+    bottom:0;
+    left: 52px;
+}
+
+.obstacle{
+    width: 166px;
+    height: 113px;
+    background-image: url(dragon.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+
+.animateDino{
+    animation: dino 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top:63px;
+    font-size: 53px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#scoreCont{
+    font-size: 25px;
+    color: #54212f;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  background: white;
+  color: white;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+after { clear: both; }
+
+.login {
+  margin: 50px auto;
+  width: 320px;
+}
+
+.login form {
+  margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #282e33;
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+}
+
+.login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: #606468;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.login form input[type="email"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 90%;
+  height: 50px;
+}
+
+.login form input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 90%;
+  height: 50px;
+}
+
+.login form input[type="submit"] {
+  background: #b5cd60;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+#login form input[type="submit"]:hover {
+  background: #16aa56;
+}
+
+.hidden{
+  display:none !important;
+}
+.link-to-sign-in{
+  color: lightblue;
+  text-decoration: underline;
+  font-size: 12px;
+  width: max-content !important;
+    color: white !important;
+  cursor: pointer;
+  border-right: none !important;
+  background-color: transparent !important;
+}
+.link-to-register{
+  color: lightblue;
+  text-decoration: underline;
+  font-size: 12px;
+  width: max-content !important;
+    color: white !important;
+  cursor: pointer;
+  border-right: none !important;
+  background-color: transparent !important;
+}
+.helper-text-h4{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
