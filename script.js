@@ -84,7 +84,7 @@ function store(){
             pastScores : []
         })
         localStorage.setItem("users", JSON.stringify(users));
-        alert('Your account has been created please click on proceed to login');
+        alert('Your account has been created please click on proceed to Sign in');
     }
 }
 
