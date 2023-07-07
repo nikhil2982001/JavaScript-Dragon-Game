@@ -170,7 +170,7 @@ after { clear: both; }
 }
 .link-to-sign-in{
   color: lightblue;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 12px;
   width: max-content !important;
     color: white !important;
@@ -180,7 +180,7 @@ after { clear: both; }
 }
 .link-to-register{
   color: lightblue;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 12px;
   width: max-content !important;
     color: white !important;
