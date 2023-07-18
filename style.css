@@ -49,6 +49,8 @@ body{
     font-size: 53px;
     text-align: center; 
     font-family: 'Ubuntu', sans-serif;
+    width: 600px;
+    line-height:1;
 }
 
 #scoreCont{
